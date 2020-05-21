@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cview"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+       app:cardCornerRadius="5dp"
+       android:elevation="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_margin="5dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="match_parent"
+                        android:id="@+id/ciview"
+                        android:src="@mipmap/ic_launcher_round"
+                        android:layout_margin="5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:layout_margin="5dp"
+                        android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.5"
+                                    android:text="File Name"
+                                    android:textSize="15sp"
+                                    android:id="@+id/fname"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.5"
+                            android:text="File Size"
+                            android:textSize="15sp"
+                            android:id="@+id/fsize"/>
+                    </LinearLayout>
+
+                     <LinearLayout
+                         android:layout_width="0dp"
+                         android:layout_height="match_parent"
+                         android:layout_weight="0.1"
+                         android:orientation="vertical">
+                            <ImageButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.5"
+                                android:id="@+id/btn_delete"
+                                android:background="#FFFFFF"
+                                android:layout_gravity="center"
+                                android:src="@drawable/ic_delete_sweep_black_24dp"/>
+
+                         <ImageButton
+                             android:layout_width="wrap_content"
+                             android:layout_height="0dp"
+                             android:layout_weight="0.5"
+                             android:id="@+id/btn_view"
+                             android:background="#FFFFFF"
+                             android:layout_gravity="center"
+                             android:src="@drawable/ic_rate_review_black_24dp"/>
+
+                     </LinearLayout>
+
+            </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
